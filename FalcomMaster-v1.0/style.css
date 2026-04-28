@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'FalcomMaster';
+  src:  url('fonts/FalcomMaster.eot?qi43dm');
+  src:  url('fonts/FalcomMaster.eot?qi43dm#iefix') format('embedded-opentype'),
+    url('fonts/FalcomMaster.ttf?qi43dm') format('truetype'),
+    url('fonts/FalcomMaster.woff?qi43dm') format('woff'),
+    url('fonts/FalcomMaster.svg?qi43dm#FalcomMaster') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'FalcomMaster' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+  color: #1877f2;
+}
+.icon-instagram:before {
+  content: "\e901";
+  color: #e4405f;
+}
+.icon-x:before {
+  content: "\e903";
+}
+.icon-whatsapp:before {
+  content: "\e902";
+  color: #25d366;
+}

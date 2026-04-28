@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Turismo Jujuy</title>
+
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Jujuy Travel</a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../views/destino.html">Destinos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../views/agencia.html">Agencias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../views/precio.html">Precios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../views/blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-warning text-dark ms-2 px-3"
+                                href="../views/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container py-5">
+
+        <h2 class="text-center mb-4">Precios</h2>
+
+        <div class="table-responsive">
+
+            <table class="table table-hover text-center">
+
+                <thead class="table-dark">
+                    <tr>
+                        <th>Destino</th>
+                        <th>Precio</th>
+                        <th>Incluye</th>
+                        <th>Destacado</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Jujuy</td>
+                        <td>$120.000</td>
+                        <td><span data-bs-toggle="tooltip" title="Hotel + excursiones">✔</span></td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td><button class="btn btn-primary btn-sm reservar-btn" data-destino="Cancún">Reservar</button></td>
+                    </tr>
+
+                    <tr class="destacado">
+                        <td>Bariloche ⭐</td>
+                        <td><strong>$250.000</strong></td>
+                        <td><span data-bs-toggle="tooltip" title="Todo incluido">✔✔</span></td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td><button class="btn btn-primary btn-sm reservar-btn" data-destino="Bariloche">Reservar</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Mendoza</td>
+                        <td>$180.000</td>
+                        <td><span data-bs-toggle="tooltip" title="Hotel + bodegas">✔</span></td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td><button class="btn btn-primary btn-sm reservar-btn" data-destino="Mendoza">Reservar</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Salta</td>
+                        <td>$50.000</td>
+                        <td><span data-bs-toggle="tooltip" title="Hotel + tour">✔</span></td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td><button class="btn btn-primary btn-sm reservar-btn" data-destino="Salta">Reservar</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Buenos Aires</td>
+                        <td>$160.000</td>
+                        <td><span data-bs-toggle="tooltip" title="Hotel + excursiones">✔</span></td>
+                        <td>⭐⭐⭐</td>
+                        <td><button class="btn btn-primary btn-sm reservar-btn" data-destino="Buenos">Reservar</button></td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+            <!-- ANUNCIOS -->
+            <div class="row mt-5 g-4">
+
+                <div class="col-md-4">
+                    <div class="anuncio anuncio1 text-center p-4">
+                        🌴 Promo Brasil -20%
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="anuncio anuncio2 text-center p-4 anuncio-destacado">
+                        ✈️ Vuelos baratos esta semana
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="anuncio anuncio3 text-center p-4">
+                        🏝️ Caribe todo incluido
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer text-white">
+        <div class="container text-center">
+
+            <div class="mb-3 social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+
+            <p>© 2026 Turismo Jujuy</p>
+
+            <iframe src="https://maps.google.com/maps?q=jujuy&output=embed"></iframe>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
